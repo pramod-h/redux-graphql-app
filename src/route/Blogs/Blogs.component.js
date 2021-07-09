@@ -39,7 +39,7 @@ class Blogs extends Component {
             return <div className="loading">Loading...</div>
         }
         return ( 
-            <div>
+            <div className="Blog-container">
                 {blogs}
             </div>
          );
