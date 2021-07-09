@@ -10,7 +10,7 @@ class HeaderComp extends Component {
             <div className="navbar-logo">LOGO</div>
             <ul className="navbar-list">
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/Users">Users</Link></li>
+                <li><Link to="/Blogs">Blogs</Link></li>
             </ul>
         </div>
          );
