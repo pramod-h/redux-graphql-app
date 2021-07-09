@@ -14,11 +14,7 @@ h1 {
     color: #0e2431;
     font-weight: 500;
     padding: 10px;
-    & h3 {
-        font-size: 25px;
-        text-align: center;
-    }
-    & p {
-        padding:10px;
+    & a {
+        text-decoration: none;
     }
 }
