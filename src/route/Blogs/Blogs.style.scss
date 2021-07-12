@@ -19,6 +19,9 @@ h1 {
         & a {
             text-decoration: none;
         }
+        & p {
+            padding: 10px;
+        }
         @media screen and (max-width:500px) {
             max-width: 20rem;
         }

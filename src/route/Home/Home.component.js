@@ -12,7 +12,7 @@ class Home extends Component {
                 <div className="home-content">
                     <div className="home-text">
                         <p className="home-first">Hello,</p>
-                        <p className="home-second">Welcome Page</p>
+                        <p className="home-second">Welcome to Blogs</p>
                     </div>
                 </div>
             </div>
