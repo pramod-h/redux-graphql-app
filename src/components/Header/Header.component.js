@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
-import './Header.style.scss';
 import {Link} from 'react-router-dom';
 
-class HeaderComp extends Component {
+import './Header.style.scss';
+
+/**
+ * 
+ */
+export class HeaderComp extends Component {
 
     render() { 
         return ( 
