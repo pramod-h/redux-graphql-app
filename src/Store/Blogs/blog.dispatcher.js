@@ -6,7 +6,6 @@ import { fetchBlogs } from "./blog.action"
 
 export class fetchBlogDispatcher {
     dispatchBlogs(dispatch) {
-        debugger
         fetch("https://graphqlzero.almansi.me/api", {
             "method": "POST",
             "headers": { "content-type": "application/json" },

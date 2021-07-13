@@ -6,7 +6,6 @@ import fetchBlogDispatcher  from '../../Store/Blogs/blog.dispatcher'
 class BlogsContainer extends Component {
     constructor(props) {
         super(props)
-        debugger
         this.state = {
             data : null
         }
@@ -15,7 +14,7 @@ class BlogsContainer extends Component {
 
     render() {
         const {BlogData} =  this.props
-        if(BlogData.length == 0) {
+        if(BlogData.length === 0) {
             return <div className="loading">Loading...</div>
         }
         return (
@@ -30,7 +29,6 @@ class BlogsContainer extends Component {
  * @returns 
  */
 export const stateToProps = (state) => {
-    debugger
     console.log("state" , state);
     return {BlogData: state.Blogs}
 }

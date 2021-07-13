@@ -1,0 +1,16 @@
+.blogCard {
+        border: 1px solid #d4d4d4;
+        box-shadow: 0 0 10px grey;
+        border-radius: 8px;
+        margin: 2rem auto;
+        width: 40rem;
+        color: #0e2431;
+        font-weight: 500;
+        padding: 10px;
+        & .row {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+        }
+        
+    
+}

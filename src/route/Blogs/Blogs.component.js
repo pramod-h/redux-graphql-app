@@ -5,9 +5,6 @@ import './Blogs.style.scss';
 
 
 class Blogs extends Component {
-    constructor(props) {
-        super(props);
-    }
 
     render() {
         const { blogData } = this.props
@@ -15,7 +12,7 @@ class Blogs extends Component {
         const blogcards = blogData.map((blogcard, index) => {
             return (
                 <div key={blogcard.id} className="Blog-card">
-                    <Link to={`/blogs/${blogcard.id}`}>
+                    <Link to={`/Blogs/${blogcard.id}`}>
                         <p>Title : {blogcard.title}</p>
                         <p>ID : {blogcard.id}</p>
                     </Link>
