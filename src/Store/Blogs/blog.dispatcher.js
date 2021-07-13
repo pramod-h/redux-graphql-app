@@ -1,4 +1,5 @@
-import { fetchBlogs } from "./blog.action"
+import { fetchBlogs } from "./blog.action";
+import {fetchAllBlogs} from '../../query/fetchAllBlogs';
 
 /**
  * Dispatch Method
@@ -9,15 +10,7 @@ export class fetchBlogDispatcher {
             "method": "POST",
             "headers": { "content-type": "application/json" },
             "body": JSON.stringify({
-                query: `{
-                          posts {
-                              data {
-                                  id
-                                  title
-                                  body
-                              }
-                          }
-                        }`
+                query: fetchAllBlogs,
             })
         }).then(res => res.json())
           .then(data => {

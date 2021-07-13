@@ -1,5 +1,5 @@
-export const fetchAllBlogs = `{
-    query {
+export const fetchAllBlogs = `
+query {
         posts {
             data {
                 id
@@ -7,6 +7,5 @@ export const fetchAllBlogs = `{
                 body
             }
         }
-    }
-}`
+    }`
 
