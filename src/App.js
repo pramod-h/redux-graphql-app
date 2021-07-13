@@ -10,7 +10,7 @@ function App() {
         <Header />
         <Switch>
           <Route path='/' exact component={Home} />
-          <Route path='/blogs/:id' component={BlogCardDetails} />
+          <Route path='/Blogs/:id/:title/:body' component={BlogCardDetails} />
           <Route path='/Blogs' exact component={BlogsContainer} />
         </Switch>
       </Router>

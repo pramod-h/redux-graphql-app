@@ -1,3 +1,5 @@
+@import '../../Style/mediaQuery.mixin.scss';
+
 * {
     box-sizing: border-box;
 }
@@ -12,9 +14,22 @@
         grid-template-columns: 900px 1fr;
         justify-content: center;
         align-items: center;
+        @include For-Mobiles {
+            grid-template-columns: 1fr;
+        }
+        @include For-Tablets {
+            grid-template-columns:1fr;
+        }
     }
     &-text p {
         margin: 0 ;
+        @include For-Mobiles {
+            font-size: 35px;
+            text-align: center;
+        }
+        @include For-Tablets  {
+            text-align: center;
+        }
     }
     &-first {
         font-size: 25px;
@@ -29,5 +44,11 @@
         text-align: center;
         width: 100%;
         height: 100%;
+        & svg {
+            @include For-Mobiles {
+                width: 100%;
+                height: 100%;
+            }
+        }
     }
 }

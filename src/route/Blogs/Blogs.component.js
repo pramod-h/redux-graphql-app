@@ -12,7 +12,7 @@ class Blogs extends Component {
         const blogcards = blogData.map((blogcard, index) => {
             return (
                 <div key={blogcard.id} className="Blog-card">
-                    <Link to={`/Blogs/${blogcard.id}`}>
+                    <Link to={`/Blogs/${blogcard.id}/${blogcard.title}/${blogcard.body}`}>
                         <p>Title : {blogcard.title}</p>
                         <p>ID : {blogcard.id}</p>
                     </Link>

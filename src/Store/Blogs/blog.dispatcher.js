@@ -3,7 +3,6 @@ import { fetchBlogs } from "./blog.action"
 /**
  * Dispatch Method
  */
-
 export class fetchBlogDispatcher {
     dispatchBlogs(dispatch) {
         fetch("https://graphqlzero.almansi.me/api", {
@@ -15,6 +14,7 @@ export class fetchBlogDispatcher {
                               data {
                                   id
                                   title
+                                  body
                               }
                           }
                         }`

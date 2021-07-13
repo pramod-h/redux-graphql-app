@@ -1,8 +1,11 @@
 export const fetchAllBlogs = `{
     query {
-        data {
-            id
-            title
+        posts {
+            data {
+                id
+                title
+                body
+            }
         }
     }
 }`

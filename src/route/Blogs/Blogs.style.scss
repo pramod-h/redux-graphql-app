@@ -1,3 +1,5 @@
+@import '../../Style/mediaQuery.mixin.scss';
+
 * {
     box-sizing: border-box;
 }
@@ -22,11 +24,14 @@ h1 {
         & p {
             padding: 10px;
         }
-        @media screen and (max-width:500px) {
+        @include For-Mobiles{
+            max-width: 18rem;
+        }
+        @include For-Tablets{
             max-width: 20rem;
         }
     }
-    @media screen and (max-width:500px) {
+    @include For-Mobiles{
         grid-template-columns: 1fr;
     }
 }

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
+import HomeImage from '../../util/HomeImage';
+
 import './Home.style.scss';
 
 class Home extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {  }
-    }
+
     render() { 
         return ( 
             <div className="home">
@@ -13,6 +12,9 @@ class Home extends Component {
                     <div className="home-text">
                         <p className="home-first">Hello,</p>
                         <p className="home-second">Welcome to Blogs</p>
+                    </div>
+                    <div className="home-image">
+                        <HomeImage />
                     </div>
                 </div>
             </div>
